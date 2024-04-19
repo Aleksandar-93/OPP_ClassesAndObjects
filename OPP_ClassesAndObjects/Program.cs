@@ -11,9 +11,14 @@ namespace ClassesAndObjects
     {
         static void Main(string[] args)
         {
-            Car audi = new Car();
+            Car audi = new Car("audi A4",250,"blue");
             audi.Drive();
-            Car bmw = new Car();
+            audi.Details();
+            Car bmw = new Car("BMW M5", 350,"red");
+            bmw.Drive();
+            bmw.Details();
+
+
             Console.WriteLine("press 1 to stop car!");
             string userInput = Console.ReadLine();
             if (userInput == "1")
