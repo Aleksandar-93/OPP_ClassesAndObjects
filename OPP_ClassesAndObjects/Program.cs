@@ -11,6 +11,8 @@ namespace ClassesAndObjects
     {
         static void Main(string[] args)
         {
+            Car myCar = new Car();
+            myCar.Details();
             Car audi = new Car("audi A4",250,"blue");
             audi.Drive();
             audi.Details();

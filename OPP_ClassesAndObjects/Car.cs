@@ -14,8 +14,28 @@ namespace OPP_ClassesAndObjects
         private string _name; //private field
         private int _hp;
         private string _color;
-        // constructor
-        public Car(string name, int hp = 0, string color = "black")
+
+
+        //Default Constructor
+        public Car()
+        {
+            _name = "Car";
+            _hp = 0;
+            _color = "red";
+        }
+
+
+        // Partial Specification constructor
+        public Car(string name, int hp = 0)
+        {
+            _name = name;
+            Console.WriteLine(name + " was created");
+            _hp = hp;
+            _color = "red";
+        }
+
+        // Full specification constructor
+        public Car(string name, int hp, string color = "black")
         {
             _name = name;
             Console.WriteLine(name + " was created");
