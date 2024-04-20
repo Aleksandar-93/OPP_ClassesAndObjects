@@ -15,6 +15,9 @@ namespace OPP_ClassesAndObjects
         private int _hp;
         private string _color;
 
+        //Auto implemented property
+        public int MaxSpeed { get; set; }
+
         // the public property
         public string Name { 
             get { return _name; } // get accessor 

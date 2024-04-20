@@ -12,7 +12,8 @@ namespace ClassesAndObjects
         static void Main(string[] args)
         {
             Car myCar = new Car();
-            Console.WriteLine(myCar.Name);
+            myCar.MaxSpeed = 180;
+            Console.WriteLine("maxspeed is " + myCar.MaxSpeed);
         }
 
     }
