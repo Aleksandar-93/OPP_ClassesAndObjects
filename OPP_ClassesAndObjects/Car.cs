@@ -15,7 +15,16 @@ namespace OPP_ClassesAndObjects
         private int _hp;
         private string _color;
 
-        public void setName(string name)
+        public int GetHp()
+        {
+             return _hp;
+        }
+        public string GetName()
+        {
+            return _name + " car";
+        }
+
+        public void SetName(string name)
         {
             if(name == "")
             {
@@ -32,7 +41,7 @@ namespace OPP_ClassesAndObjects
         public Car()
         {
             _name = "Car";
-            _hp = 0;
+            _hp = 5;
             _color = "red";
         }
 
