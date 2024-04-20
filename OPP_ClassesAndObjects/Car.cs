@@ -15,6 +15,18 @@ namespace OPP_ClassesAndObjects
         private int _hp;
         private string _color;
 
+        public void setName(string name)
+        {
+            if(name == "")
+            {
+                _name = "DefaultName";
+            }
+            else
+            {
+                _name = name;
+            }
+        }
+
 
         //Default Constructor
         public Car()

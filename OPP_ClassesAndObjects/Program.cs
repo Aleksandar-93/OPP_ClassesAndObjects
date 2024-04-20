@@ -12,10 +12,13 @@ namespace ClassesAndObjects
         static void Main(string[] args)
         {
             Car myCar = new Car();
+            myCar.setName("Default Red Car with special name");
             myCar.Details();
+
             Car audi = new Car("audi A4",250,"blue");
             audi.Drive();
             audi.Details();
+
             Car bmw = new Car("BMW M5", 350,"red");
             bmw.Drive();
             bmw.Details();
