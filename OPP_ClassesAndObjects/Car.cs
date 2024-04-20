@@ -14,9 +14,20 @@ namespace OPP_ClassesAndObjects
         private string _name; //private field
         private int _hp;
         private string _color;
+        public int _maxSpeed;
 
-        //Auto implemented property
-        public int MaxSpeed { get; set; }
+        //Read only and Write only property
+        //if only want to get 
+        // public int MaxSpeed { get; } = 10;
+
+        // if only want to set
+        public int MaxSpeed
+        {
+            set
+            {
+                _maxSpeed = value;
+            }
+        }
 
         // the public property
         public string Name { 
@@ -40,6 +51,8 @@ namespace OPP_ClassesAndObjects
             _name = "Car";
             _hp = 5;
             _color = "red";
+            _maxSpeed = 150;
+            Drive();
         }
 
 

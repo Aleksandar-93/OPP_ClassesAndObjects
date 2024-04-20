@@ -13,7 +13,6 @@ namespace ClassesAndObjects
         {
             Car myCar = new Car();
             myCar.MaxSpeed = 180;
-            Console.WriteLine("maxspeed is " + myCar.MaxSpeed);
         }
 
     }
