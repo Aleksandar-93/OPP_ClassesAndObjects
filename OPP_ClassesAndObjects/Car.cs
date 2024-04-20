@@ -15,25 +15,19 @@ namespace OPP_ClassesAndObjects
         private int _hp;
         private string _color;
 
-        public int GetHp()
-        {
-             return _hp;
-        }
-        public string GetName()
-        {
-            return _name + " car";
-        }
-
-        public void SetName(string name)
-        {
-            if(name == "")
-            {
-                _name = "DefaultName";
-            }
-            else
-            {
-                _name = name;
-            }
+        // the public property
+        public string Name { 
+            get { return _name; } // get accessor 
+            set { 
+                if (value == "")
+                {
+                    _name = "Hello world Default Name";
+                }
+                else
+                {
+                    _name = value;
+                }
+            } // set accessor 
         }
 
 
